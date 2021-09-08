@@ -1,13 +1,16 @@
 #include "some_math.h"
+#include <iostream>
 
 int fibbonachiRecursive(int n) {
-    // TODO 03 реализуйте функцию которая считает числа Фибоначчи - https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B8
+    // TODO 03 реализуйте функцию которая считает числа Фибоначчи - https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B
+
     return 0;
 }
 
-int fibbonachiFast(int n) {
-    // TODO 04 реализуйте быструю функцию Фибоначчи с использованием std::vector
-    return 0;
+// int fibbonachiFast(int n) {
+  //  std::vector<int> fib;
+ //   fib.push_back(x);
+//    return 0;
 }
 
 double solveLinearAXB(double a, double b) {
