@@ -21,11 +21,11 @@ void task1() {
         std::filesystem::create_directory(resultsDir); // то создаем ее
     }
 
-    cv::Mat blueUnicorn = makeAllBlackPixelsBlue(imgUnicorn); // TODO реализуйте функцию которая каждый пиксель картинки который близок к белому - делает синим
+    cv::Mat blueUnicorn = makeAllBlackPixelsBlue(imgUnicorn.clone()); // TODO реализуйте функцию которая каждый пиксель картинки который близок к белому - делает синим
     std::string filename = resultsDir + "01_blue_unicorn.jpg"; // удобно в начале файла писать число, чтобы файлы были в том порядке в котором мы их создали
     cv::imwrite(filename, blueUnicorn);
 
-    cv::Mat invertedUnicorn = invertImageColors(imgUnicorn); // TODO реализуйте функцию которая каждый цвет картинки инвертирует
+    cv::Mat invertedUnicorn = invertImageColors(imgUnicorn.clone()); // TODO реализуйте функцию которая каждый цвет картинки инвертирует
     // TODO сохраните резльутат в ту же папку, но файл назовите "02_inv_unicorn.jpg"
 
 //    cv::Mat castle; // TODO считайте с диска картинку с замком - castle.png
