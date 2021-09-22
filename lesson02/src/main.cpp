@@ -86,51 +86,20 @@ void task3() {
     }
 
     // TODO 37 ваша программа должна считывать пары чисел i, j в вечном цикле до тех пор пока i и j не отрицательны
-    while (true) {
+    int flag1 = 1;
+    while (flag1 = 1) {
         int i;
         int j;
         std::cin >> i;
         std::cout << " ";
         std::cin >> j;
         rassert(i < rows,39888383);
-        rassert(j<cols,92777444535353);
+        rassert(j < cols,92777444535353);
 
-        if ((i < 0) || (j < 0)) break;
+        if ((i < 0) || (j < 0))
+            flag1 = 0;
 
-        table[i][j] += 1;
-        std::cout << "table now:\n";
-        print2DArray(table);
-        std::cout << std::endl;
 
-        int flag1 = 1;
-        for (int k = 0; k < rows; ++k) {
-            flag1 = 1;
-            for (int l = 0; l < cols; ++l) {
-                if (table[k][l] != 1) {
-                    flag1 = 0;
-                    break;
-                }
-            }
-        }
-
-        if (flag1 == 1) {
-            std::cout << "mda";
-            break;
-        }
-        int flag2 = 1;
-        for (int k = 0; k < cols; ++k) {
-            flag2 = 1;
-            for (int l = 0; l < rows; ++l) {
-                if (table[l][k] != 1) {
-                    flag2 = 0;
-                    break;
-                }
-            }
-        }
-        if(flag2 == 1) {
-            std::cout << "oh mda";
-            break;
-        }
 
     }
 
